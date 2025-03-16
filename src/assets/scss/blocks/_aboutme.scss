@@ -1,0 +1,86 @@
+.aboutme {
+    width: 100%;
+    height:  auto;
+    background-image: url(../images/aboutme/4Y1A4565.jpg);
+    @include bg-cover;
+    position: relative;
+    z-index: 0;
+
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+
+        height: 102vh;
+        width: 100%;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.aboutme__inner {
+    position: relative;
+    z-index: 2;
+    padding: 10rem 0 2rem;
+    color: white;
+    font-size: 3rem;
+}
+.aboutme__inner__title {
+    text-align: left;
+    padding: 0 0 2rem 0rem;
+    font-size: 5.5rem;
+    font-family: 'PlayfairDisplay', serif;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 3.5px;
+    text-decoration: underline;
+}
+.aboutme__inner__context {
+    font-family: 'PlayfairDisplay', serif;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: $accent-color-two;
+}
+.aboutme__inner__subtitle {
+    display: block;
+    line-height: 1.5;
+    color: $light-color-opacity;
+    font-family: 'pacifico',cursive;
+    letter-spacing: 1.7px;
+}
+.aboutme__inner__button{
+    display: block;
+    cursor: pointer;
+    max-width: 60rem;
+    font-size: 3.5rem;
+    padding: 1rem 1.8rem;
+    background-color: $accent-color-two;
+    color: black;
+    border-radius: 2rem;
+    margin: 3rem 0 3rem auto;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    transition: all 0.4s linear;
+
+    &:hover{
+        background-color: $accent-color;
+    }
+}
+
+.aboutme__image{
+    max-width: 35rem;
+    border-radius: 5rem;
+    border: 3px solid $accent-color;
+
+    position: absolute;
+    top: 27%;
+    right: 10%;
+    z-index: 2;
+    background-color: transparent;
+
+    & > img{
+        border-radius: 5rem;
+    }
+}

@@ -1,0 +1,62 @@
+.connection {
+    width: 100%;
+    padding: 0 0 3rem;
+    background-color: lighten($color: #EF629F, $amount: 25);
+}
+
+.connection__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    background-color: rgba(81, 4, 100, 0.9);
+
+    border-radius: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.connection__inner__title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-indent: 5rem;
+    color: $light-color;
+    padding: 0 1.5rem;
+    font-style: italic;
+    font-family: "Caveat", cursive;
+}
+
+.connection__inner__call {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2.2rem 2.5rem;
+    margin-right: 3rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2rem;
+    font-family: "Playfair Display", serif;
+    transition: all 0.4s linear;
+
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+        background-color: white;
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: #ff9900;
+        transform: scale(1.03);
+    }
+
+    100% {
+        background-color: white;
+        transform: scale(1);
+    }
+
+}

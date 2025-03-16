@@ -1,0 +1,88 @@
+.rewieves {
+    width: 100%;
+    height: auto;
+    background-color: lighten($color: #EF629F, $amount: 25);
+    padding: 6rem 0;
+    position: relative;
+}
+.reviewes__inner__title{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'caveat',cursive;
+    font-weight: 700;
+
+    text-shadow: 0 1px 0 #cccccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbbbbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaaaaa,
+    0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.reviewes__inner__wrapper{
+    padding: 3rem 1.5rem;
+}
+.reviewes__inner__slide {
+    padding: 3rem  1.5rem;
+    border: 3px solid $light-color;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.reviewes__inner__slide__header {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewes__inner__slide__header__img {
+    margin-right: 2rem;
+}
+
+.reviewes__inner__slide__header__name {
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+}
+
+.reviewes__inner__slide__text {
+    padding: 1.5rem;
+    text-indent: 1.5rem;
+    height: 35rem;
+    overflow-y: auto;
+    font-family: 'Mistral',sans-serif;
+}
+.slide__left, .slide__right{
+position: absolute;
+top: 50%;
+width: 4.5rem;
+height: 4.5rem;
+border-radius: 50%;
+background-color: transparent;
+@include bg-cover;
+border: none;
+transition: all 0.4s linear;
+&:hover{
+    transform: scale(1.2);
+    
+}
+}
+.slide__left{
+    background-image: url(../images/svg/left-arrow.svg);
+    left: -3%;
+}
+.slide__right{
+    background-image: url(../images/svg/right-arrow.svg);
+    right: -3%;
+}

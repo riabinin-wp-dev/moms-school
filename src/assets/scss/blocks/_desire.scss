@@ -1,0 +1,89 @@
+.desire {
+    width: 100%;
+    height: auto;
+    background-color: lighten($color: #EF629F, $amount: 25);
+}
+
+.desire__inner {
+    padding: 4rem 0;
+}
+
+.desire__inner__title {
+    padding: 3rem 0 5rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: 'Lobster', cursive;
+
+    text-shadow:
+        -1px 1px 0px #808ac8,
+        -2px 2px 0px #808ac8,
+        -3px 3px 0px #a6c6cf,
+        -4px 4px 0px #94b8c3,
+        -5px 5px 0px #87aeb9,
+        -6px 6px 0px #7aa3af;
+        
+}
+
+.desire__inner__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.desire__inner__wrapper__item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #808ac8, #ff819d) border-box;
+    border: 3px solid transparent;
+    border-radius: 3rem;
+
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.desire__inner__wrapper__item__img {
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, darkblue, darkorchid) border-box;
+    border: 3px solid transparent;
+
+}
+
+.desire__inner__wrapper__item__text {
+    padding: 2rem 0;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'caveat', cursive;
+    color: darken($color: #808ac8, $amount: 20);
+    flex: 1 0 auto;
+}
+
+.desire__inner__about {
+    display: block;
+    font-size: 3rem;
+    padding: 1.5rem 2.2rem 2rem;
+    margin: 5rem auto 2rem;
+    max-width: 40rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    border-radius: 3rem;
+    color: $light-color;
+    background: -webkit-linear-gradient(90deg, #eac23a, #ff819d, #808ac8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg,#eac23a, #ff819d, #808ac8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.4s linear;
+
+    &:hover{
+        color: red;
+        transform: scale(1.1);
+    }
+}

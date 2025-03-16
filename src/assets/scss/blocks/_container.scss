@@ -1,0 +1,25 @@
+
+.container{
+    display: block;
+    width: 100%;
+    max-width: 123rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.container--header{
+    max-width: 143rem;
+}
+.container__fluid{
+    display: block;
+    width: 100%;
+    max-width: 135rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.container__small{
+    display: block;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}

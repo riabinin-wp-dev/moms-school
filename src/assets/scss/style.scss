@@ -1,0 +1,72 @@
+@import 'vendor/reset';
+@import 'blocks/vars';
+@import 'mixins';
+
+@import '../../../node_modules/tippy.js/dist/tippy';
+@import '../../../node_modules/tippy.js/animations/scale';
+@import '../../../node_modules/tippy.js/themes/light';
+@import '../../../node_modules/aos/dist/aos';
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+
+@import 'fonts';
+@import 'settings';
+
+html,body{
+  font-size: 10px;
+  height: 100%;
+}
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(20, 16, 36, 0.08);
+    border-radius: 40px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #141024;
+    border-radius: 40px;
+    // border: 3px solid orange;
+  }
+// =============scrollbar=============
+.main{
+  //height: 100%;
+  flex: 1 0 auto; 
+ // position: relative;
+
+}
+
+.no-scroll{
+  overflow: hidden;
+ }
+
+
+
+
+// ======blocks=========
+
+@import 'blocks/container';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/sidebar';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/desire';
+@import 'blocks/clients';
+@import 'blocks/modal';
+@import 'blocks/reviewes';
+@import 'blocks/paypacket';
+@import 'blocks/connection';
+@import 'blocks/aboutme';
+@import 'blocks/aboutinfo';
+@import 'blocks/modalfree';
+@import 'blocks/footer';
+
+
+
+
+
+
+
